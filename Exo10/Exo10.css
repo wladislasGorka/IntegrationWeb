@@ -3,10 +3,22 @@
     padding: 0;
 }
 
+body{
+    margin-top: 20px;
+}
+
 fieldset{
     width: 80%;
+    min-width: 600px;
     margin: auto;
     padding: 20px;
+}
+.champsOb{
+    width: 80%;
+    min-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-left: 20px;
 }
 
 h1{
@@ -44,6 +56,5 @@ textarea {
 }
 .italic{
     font-style: italic;
-    margin-left: 10%;
 }
 
