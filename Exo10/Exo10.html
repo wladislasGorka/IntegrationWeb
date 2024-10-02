@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Exo10.css">
+        <title>Exo10</title>
+    </head>
+
+    <body>
+        <form name="inscription" method="post">
+            <fieldset>
+                <h1>Informations personnelles</h1>
+                <ul>
+                    <li><label for="civilite">Civilité * :</label><input list="civil" name="civilite" id="civilite">
+                        <datalist id="civil">
+                            <option value="Monsieur">
+                            <option value="Madame">
+                        </datalist>
+                    </li>
+                    <li><label for="nom">Nom * :</label>
+                        <input type="text" name="nom" id="nom" placeholder="Votre Nom ici" required></li>
+                    <li><label for="prenom">Prénom * :</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom ici" required></li>
+                    <li><label for="dateNaissance">Date de naissance * :</label>
+                        <input type="date" name="dateNaissance" id="dateNaissance" required></li>
+                    <li><label for="numTelFixe">Numéro de téléphone fixe :</label>
+                        <input type="tel" name="numTelFixe" id="numTelFixe"></li>
+                    <li><label for="numTelPortable">Numéro de téléphone portable * :</label>
+                        <input type="tel" name="numTelPortable" id="numTelPortable" required></li>
+                    <li><label for="numRue">Numéro de rue * :</label>
+                        <input type="number" name="numRue" id="numRue" placeholder="N°" required>
+                        <label for="nomRue"> Nom de rue * :</label>
+                        <input type="text" name="nomRue" id="nomRue" placeholder="Nom de rue" required></li>
+                    <li><label for="codePostal">Code postal * :</label>
+                        <input type="number" name="codePostal" id="codePostal" placeholder="Votre code postal ici" required></li>
+                    <li><label for="ville">Ville * :</label>
+                        <input type="text" name="ville" id="ville" placeholder="Votre ville ici" required></li>
+                    <li><label for="pseudo"> Pseudo * :</label>
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Entrer votre pseudo ici" required></li>
+                    <li><label for="password">Mot de passe * :</label>
+                        <input type="text" name="password" id="password" placeholder="Entrer votre mot de passe ici" required>
+                        <button type="submit">Soumettre</button>
+                        <input type="checkbox" name="save" id="save"><label for="save">Se souvenir de moi</label>                        
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <h1>Informations complémentaires</h1>
+            </fieldset>
+            <fieldset>
+                <h1>Informations liées à la promotion</h1>
+            </fieldset>
+        </form>       
+    </body>
+</html>

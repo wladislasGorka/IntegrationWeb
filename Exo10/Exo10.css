@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+fieldset{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(105, 13, 45);
+    text-decoration: underline overline darkgray;
+    margin-bottom: 20px;
+}
+li{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#numRue{
+    width: 40px;
+}
+#password{
+    width: 200px;
+}
