@@ -5,7 +5,6 @@
 
 #main{
     border: 5px, solid, pink;
-    width: auto;
     height: 74vh;
     margin-bottom: 2vh;
 }
@@ -16,7 +15,7 @@
     top: 0;
     z-index: -2;
     height: 5vh;
-    width: 100%;
+    width: 99%;
 }
 #fond2{
     background-color: lightblue;
@@ -24,7 +23,7 @@
     top: 5vh;
     z-index: -2;
     height: 12vh;
-    width: 100%;
+    width: 99%;
 }
 #fond3{
     background-color: lightgray;
@@ -32,14 +31,17 @@
     top: 17vh;
     z-index: -2;
     height: 5vh;
-    width: 100%;
+    width: 99%;
 }
 
 #footer{
     background-color: gray;
     border: 5px, solid, turquoise;
-    width: auto;
     height: 20vh;
+}
+#footer .container{
+    border: 5px, solid, lightgreen;
+    height: 12vh;
 }
 
 .container{
@@ -52,42 +54,40 @@
     border: 5px, solid, red;
     height: 68vh;
 }
-#footer .container{
-    border: 5px, solid, lightgreen;
-    height: 15vh;
-}
+
 
 #header{
     border: 5px, solid, yellow;
-    margin: auto;
-    margin-top: 1vh;
+    margin: 1vh 0vh;
+    margin-inline: auto;
     width: 68vw;
     height: 14vh;
 }
 #content{
     border: 5px, solid, green;
     display: inline-block;
-    margin-top: 2vh;
+    position:absolute;
     margin-left: 3vw;
-    width: 60%;
-    height: 45vh;
+    width: 55%;
+    height: 47vh;
 }
-#sidebar{
-    border: 5px, solid, orange;
-    display: inline-block;
-    width: 30%;
-    height: 45vh;
-}
-
 #news{
     border: 5px, solid, blue;
-    margin: auto;
-    position: relative;
-    top: 50%;
-    width: 40vw;
+    position: absolute;
+    bottom: 1%;
+    left: 3%;
+    width: 90%;
     height: 20vh;
 }
 
+#sidebar{
+    border: 5px, solid, orange;
+    display: inline-block;
+    position: absolute;
+    left: 65%;
+    width: 30%;
+    height: 45vh;
+}
 #sidebar div{
     border: 5px, solid, purple;
     margin: auto;
@@ -99,4 +99,9 @@
     background-color: lightgray;
     margin: 1vh;
     padding: 10px 10px;
+}
+
+p{
+    font-size: xx-small;
+    margin-bottom: -1%;
 }
