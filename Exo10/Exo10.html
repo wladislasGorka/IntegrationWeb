@@ -12,7 +12,8 @@
             <fieldset>
                 <h1>Informations personnelles</h1>
                 <ul>
-                    <li><label for="civilite">Civilité * :</label><input list="civil" name="civilite" id="civilite">
+                    <li><label for="civilite">Civilité * :</label>
+                        <input list="civil" name="civilite" id="civilite">
                         <datalist id="civil">
                             <option value="Monsieur">
                             <option value="Madame">
@@ -47,10 +48,67 @@
             </fieldset>
             <fieldset>
                 <h1>Informations complémentaires</h1>
+                <p class="tab">Quel est votre niveau en développement ? 
+                    <input type="radio" name="niveau" id="debutant" value="debutant">
+                    <label for="debutant">Débutant</label>
+                    <input type="radio" name="niveau" id="junior" value="junior">
+                    <label for="junior">Junior</label>
+                    <input type="radio" name="niveau" id="expert" value="expert">
+                    <label for="expert">Expert</label>
+                </p>
+                <p>Quel est votre niveau de connaissance dans les différents langages :</p>
+                <ul>
+                    <li><input type="checkbox" name="html" id="html">
+                        <label for="html">html/css</label></li>
+                    <li><input type="checkbox" name="python" id="python">
+                        <label for="python">Python</label></li>
+                    <li><input type="checkbox" name="php" id="php">
+                        <label for="php">PHP</label></li>
+                    <li><input type="checkbox" name="java" id="java">
+                        <label for="java">Java</label></li>
+                    <li><input type="checkbox" name="nodejs" id="nodejs">
+                        <label for="nodejs">NodeJS</label></li>
+                    <li><input type="checkbox" name="reactjs" id="reactjs">
+                        <label for="reactjs">ReactJS</label></li>
+                    <li><input type="checkbox" name="c" id="c">
+                        <label for="c">C#</label></li>
+                </ul>
+                <p>
+                    <label for="os">Sur quel OS travaillez-vous ?</label>
+                    <input list="osList" name="os" id="os">
+                    <datalist id="osList">
+                        <option value="windows"></option>
+                        <option value="Linux"></option>
+                        <option value="Mac"></option>
+                    </datalist>
+                </p>
             </fieldset>
             <fieldset>
                 <h1>Informations liées à la promotion</h1>
+                <ul>
+                    <li>
+                    <label for="promotion">promotion beweb ?</label>
+                    <input list="promotionList1" name="promotion" id="promotion" size="10">
+                    <datalist id="promotionList1">
+                        <option value="Montpellier"></option>
+                        <option value="Béziers"></option>
+                    </datalist>
+                    <input list="promotionList2" name="promotion" size="4">
+                    <datalist id="promotionList2">
+                        <option value="2025"></option>
+                        <option value="2024"></option>
+                        <option value="2023"></option>
+                    </datalist></li>
+                </ul>
+                <p class="tab">
+                    <label for="urlTD1">Merci de nous faire parvenir votre URL_TD1 :</label>
+                    <input type="url" name="urlTD1" id="urlTD1">
+                </p>
+                <p class="tab">Si vous avez des questions vous pouvez nous les laisser en commentaire ci-dessous :</p>
+                <textarea class="tab" id="w3review" name="w3review" rows="10" cols="100" placeholder="Votre commentaire ici"></textarea>
+                <button type="submit" class="tab" value="Envoyer">Envoyer</button>
             </fieldset>
-        </form>       
+        </form>   
+        <p class="italic">*Champs obligatoire</p>    
     </body>
 </html>

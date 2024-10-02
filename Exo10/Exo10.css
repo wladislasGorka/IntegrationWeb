@@ -15,6 +15,9 @@ h1{
     text-decoration: underline overline darkgray;
     margin-bottom: 20px;
 }
+ul{
+    margin-bottom: 20px;
+}
 li{
     margin-bottom: 10px;
     margin-left: 20px;
@@ -26,3 +29,21 @@ li{
 #password{
     width: 200px;
 }
+
+p{
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.tab{
+    margin-left: 40px;
+}
+.italic{
+    font-style: italic;
+    margin-left: 10%;
+}
+
