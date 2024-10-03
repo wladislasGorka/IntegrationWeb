@@ -35,7 +35,7 @@ nav p{
 
 main{
     background-color: pink;
-    height: 75vh;
+    height: 71vh;
     font-size: 20px;
     padding: 2vh;
 }
@@ -66,4 +66,67 @@ footer{
     height: 10vh;
     width: 100%;
     font-size: 20px;
+}
+
+/* Avec grid: */
+#container{
+    background-color: white;
+    height: 100%;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+}
+#container :nth-child(1){
+    order: 1;
+}
+#container :nth-child(2){
+    order: 2;
+}
+#container :nth-child(3){
+    order: 5;
+}
+#container :nth-child(4){
+    order: 6;
+}
+#container :nth-child(5){
+    order: 3;
+}
+#container :nth-child(6){
+    order: 4;
+}
+#container :nth-child(7){
+    order: 7;
+}
+#container :nth-child(8){
+    order: 8;
+}
+#container :nth-child(9){
+    order: 9;
+}
+#container :nth-child(10){
+    order: 10;
+}
+#container :nth-child(11){
+    order: 13;
+}
+#container :nth-child(12){
+    order: 14;
+}
+#container :nth-child(13){
+    order: 11;
+}
+#container :nth-child(14){
+    order: 12;
+}
+#container :nth-child(15){
+    order: 15;
+}
+#container :nth-child(16){
+    order: 16;
+}
+#container > div > p{
+    position: relative;
+    top: 40%;
 }
